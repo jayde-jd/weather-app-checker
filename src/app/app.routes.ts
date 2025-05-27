@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { LandingComponent } from './landing/landing.component';
-import { WeatherComponent } from './weather/weather.component';
+import { HomeComponent } from './pages/home/home.component';
+import { LandingComponent } from './pages/landing/landing.component';
+import { WeatherComponent } from './pages/weather/weather.component';
 import { AuthGuard } from './auth.guard';
 
 /**
