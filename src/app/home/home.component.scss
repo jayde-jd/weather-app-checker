@@ -1,0 +1,36 @@
+.card {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+  .card-body {
+    padding: 2rem;
+  }
+}
+
+h2, h4 {
+  color: #333;
+}
+
+.input-group {
+  .form-control {
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #ced4da;
+    padding: 10px 15px;
+
+    &:focus {
+      box-shadow: none;
+      border-color: #80bdff;
+    }
+  }
+
+  .btn {
+    border-radius: 0 8px 8px 0;
+    padding: 10px 20px;
+  }
+}
+
+hr {
+  margin: 1.5rem 0;
+  color: #eee;
+}

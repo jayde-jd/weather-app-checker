@@ -30,11 +30,12 @@
                 "glob": "**/*",
                 "input": "public"
               }
-            ],
-            "styles": [
+            ],            "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -89,14 +90,18 @@
                 "glob": "**/*",
                 "input": "public"
               }
-            ],
-            "styles": [
+            ],            "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

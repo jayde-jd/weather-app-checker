@@ -1,5 +1,7 @@
 # WeatherApp
 
+WeatherWise is a simple and user-friendly weather app designed to provide real-time weather updates for any location. It features current temperature, humidity, pressure, and description, all presented in a clean and intuitive interface.
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13.
 
 ## Development server

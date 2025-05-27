@@ -1,0 +1,29 @@
+.card {
+  border-radius: 15px;
+  border: none;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.btn-primary {
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+h1 {
+  color: #333;
+  font-weight: 700;
+}
+
+.lead {
+  color: #666;
+}

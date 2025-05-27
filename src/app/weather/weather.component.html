@@ -1,0 +1,42 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="card shadow">
+        <div class="card-body">
+          <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-4">
+            <h2>Weather for {{ cityName }}</h2>
+            <button class="btn btn-outline-primary btn-sm" routerLink="/home">
+              <i class="bi bi-arrow-left me-2"></i>Back
+            </button>
+          </div>
+
+          <!-- Weather Details Table -->
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle text-nowrap">
+              <thead class="table-light">
+                <tr>
+                  <th>Date (mm/dd/yyyy)</th>
+                  <th>Temp (°F)</th>
+                  <th>Description</th>
+                  <th>Main</th>
+                  <th>Pressure</th>
+                  <th>Humidity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{ formatUnixToDate(weatherData.dt) }}</td>
+                  <td>{{ celsiusToFahrenheit(weatherData.main.temp) }}</td>
+                  <td>{{ weatherData.weather[0].description }}</td>
+                  <td>{{ weatherData.weather[0].main }}</td>
+                  <td>{{ weatherData.main.pressure }}</td>
+                  <td>{{ weatherData.main.humidity }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
