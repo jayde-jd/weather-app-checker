@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { RouterLink } from '@angular/router';
 import { WeatherService } from '../services/weather.service';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-weather',
-  imports: [RouterLink],
+  imports: [RouterLink, NgIf],
   templateUrl: './weather.component.html',
   styleUrl: './weather.component.scss'
 })

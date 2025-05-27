@@ -11,7 +11,12 @@
           </div>
 
           <!-- Weather Details Table -->
-          <div class="table-responsive">
+           <div class="d-flex justify-content-center" *ngIf="loading">
+            <div class="spinner-border spinner-border-sm" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+          <div class="table-responsive" *ngIf="!loading && weatherData">
             <table class="table table-bordered table-hover align-middle text-nowrap">
               <thead class="table-light">
                 <tr>
